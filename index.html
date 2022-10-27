@@ -13,7 +13,12 @@
 <body>
   <main>
     <div class="card">
-      <img src="images/image-header-mobile.jpg" alt="A group of women in a business meeting.">
+      <!-- overlay testing -->
+      <div class="overlay-wrapper">
+        <img src="images/image-header-mobile.jpg" alt="A group of women in a business meeting.">
+        <div class="overlay"></div>
+      </div>
+      <!-- overlay test end -->
       <div class="card-info">
         <h1 class="white-text">
           Get <span class="purple-text">insights</span> that help your business grow.
@@ -22,10 +27,27 @@
           Discover the benefits of data analytics and make better decisions regarding revenue, customer 
           experience, and overall efficiency.
         </p>
-        <!-- There's probably better tags to use here. h2 tag and span? Probably need to wrap in a div and use grid -->
-        <p><span class="white-text">10k+</span><br>companies</p>
-        <p><span class="white-text">314</span><br>templates</p>
-        <p><span class="white-text">12m+</span><br>queries</p>
+
+        <div class="grid-container">
+          <div>
+            <h2>
+              <span class="stat-number white-text">10k+</span>
+              <span class="stat-type">companies</span>
+            </h2>
+          </div>
+          <div>
+            <h2>
+              <span class="stat-number white-text">314</span>
+              <span class="stat-type">templates</span>
+            </h2>
+          </div>
+          <div>
+            <h2>
+              <span class="stat-number white-text">12M+</span>
+              <span class="stat-type">queries</span>
+            </h2>
+          </div>
+        </div>
       </div>
     </div>
   </main>

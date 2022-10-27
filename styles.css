@@ -11,12 +11,18 @@
 --stat-headings: hsla(0, 0%, 100%, 0.6);
 }
 
+/* 1px = 1rem */
+html {
+  font-size: 6.25%;
+}
+
 body {
   display: grid;
   place-items: center;
   min-height: 100vh;
-  padding: 20px;
   margin: 0;
+  padding: 20px 40px;
+  font-size: 15rem;
   background-color: var(--main-background);
 }
 
@@ -32,10 +38,9 @@ img {
   border-radius: 10px;
   text-align: center;
 }
-/* Inter is the main font. Figure out where Lexend Deca goes. Stat headings?
-   font-family: 'Lexend Deca', sans-serif; */
+
 .card-info {
-  padding: 10px;
+  padding: 10px 15px;
   font-family: 'Inter', sans-serif;
 }
 
@@ -45,4 +50,44 @@ img {
 
 .purple-text {
   color: var(--accent);
+}
+
+h1 {
+  font-size: 26rem;
+}
+
+p {
+  line-height: 1.5;
+  margin-block-end: 30px;
+}
+
+.stat-number {
+  display: block;
+  padding-block-end: 5px;
+}
+
+.stat-type {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11rem;
+  letter-spacing: .1em;
+  font-family: 'Lexend Deca', sans-serif;
+  color: var(--stat-headings);
+}
+
+/* overlay styling test */
+
+.overlay-wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  width: 295px;
+  height: 216.5px;
+  top: 0;
+  opacity: 30%;
+  border-radius: 10px 10px 0 0;
+  background-color: hsl(267, 100%, 50%);
 }
