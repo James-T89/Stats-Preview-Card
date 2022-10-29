@@ -111,7 +111,6 @@ p {
     position: absolute;
     width: 100%;
     height: 99%;
-    max-height: 392rem;
     top: 0;
     opacity: 30%;
     border-radius: 0 10px 10px 0;
@@ -126,7 +125,6 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     min-width: 950rem;
-    max-width: 950rem;
     max-height: 392rem;
     margin-inline-end: 30rem;
     text-align: start;
