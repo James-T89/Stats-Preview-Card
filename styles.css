@@ -37,6 +37,7 @@ img {
   background-color: var(--card-background);
   border-radius: 10px;
   text-align: center;
+  max-width: 408rem;
 }
 
 .card-info {
@@ -76,18 +77,80 @@ p {
   color: var(--stat-headings);
 }
 
-/* overlay styling test */
-
-.overlay-wrapper {
+.overlay-wrapper-mobile {
   position: relative;
 }
 
-.overlay {
+.overlay-mobile {
   position: absolute;
-  width: 295px;
-  height: 216.5px;
+  width: 100%;
+  height: 99%;
+  max-height: 338rem;
   top: 0;
   opacity: 30%;
   border-radius: 10px 10px 0 0;
   background-color: hsl(267, 100%, 50%);
+}
+
+.overlay-wrapper-desktop {
+  display: none;
+  position: relative;
+}
+
+@media (min-width: 900px) {
+
+  .overlay-wrapper-mobile {
+    display: none;
+  }
+
+  .overlay-wrapper-desktop {
+    display: block;
+  }
+
+  .overlay-desktop {
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    max-height: 392rem;
+    top: 0;
+    opacity: 30%;
+    border-radius: 0 10px 10px 0;
+    background-color: hsl(267, 100%, 50%);
+  }
+
+  img {
+    border-radius: 0 10px 10px 0;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-width: 950rem;
+    max-width: 950rem;
+    max-height: 392rem;
+    margin-inline-end: 30rem;
+    text-align: start;
+
+  }
+
+  .card-info {
+    padding: 40rem 80rem 0rem 50rem;
+  }
+
+  h1 {
+    font-size: 32rem;
+  }
+
+  p {
+    font-size: 13.5rem;
+    padding-inline-end: 20rem;
+    margin-block-start: 25rem;
+  }
+
+  .stats-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20rem;
+    margin-block-start: 50rem;
+  }
 }
